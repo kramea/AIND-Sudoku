@@ -23,7 +23,7 @@ A constraint on diagonals that they should have unique values is similar to the 
 
 So, in order to implement this, two sets of diagonals are created: Left-to-right (A1, B2, C3....I9), and Right-to-left (I1, H2, G3,....A9). They are zipped to their respective values to create diagonal dictionaries.
 
-In order to implement diagonal sudoku, an additional constraint on unit list is made in all the three solve strategies: eliminate, only_choice and naked_twins. The unit list which previously consisted of rows, columns and squares now have diagonals, and the constraint makes sure each unit list consist of unique values.
+Then, an additional constraint on unit list is made in all the three solve strategies: eliminate, only_choice and naked_twins. The unit list which previously consisted of rows, columns and squares now have diagonals, and the constraint makes sure each unit list consist of unique values.
 
 ### Install
 
