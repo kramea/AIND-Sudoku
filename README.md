@@ -5,11 +5,11 @@
 Q: How do we use constraint propagation to solve the naked twins problem?  
 
 The approach is similar to the 'eliminate' strategy, except that in this case, we are identifying pairs of 2-digit values, and are eliminating those digits from the rest of the 'unit' group (columns, rows, square units, diagonals) Here are the steps that was following to implement this:
-	1. Identify all the 2-digit values in the given grid
-	2. Construct a nested for loop with the twin value list to identify if there is a match
-	3. If yes, loop through each set of unit groups (columns, rows, squares, left-to-right diagonals, and right-to-left diagonals), and check if the matched pair exists in the unit group. 
-	4. If the pair exists, then remove the digits of the values of matched pair from the rest of the values in the unit group (sanity check: length of the values are checked. This operation is carried out only if the length is more than 1).
-	5. Iterate the loop for all the unit groups
+	- Identify all the 2-digit values in the given grid
+	- Construct a nested for loop with the twin value list to identify if there is a match
+	- If yes, loop through each set of unit groups (columns, rows, squares, left-to-right diagonals, and right-to-left diagonals), and check if the matched pair exists in the unit group. 
+	- If the pair exists, then remove the digits of the values of matched pair from the rest of the values in the unit group (sanity check: length of the values are checked. This operation is carried out only if the length is more than 1).
+	- Iterate the loop for all the unit groups
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
